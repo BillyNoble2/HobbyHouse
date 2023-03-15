@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">HobbyHouse</string>
+    <string name="welcome_text">Welcome to HobbyHouse!</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="forgotpassword">Forgotten your password?:</string>
+    <string name="homepage">Upcoming Events:</string>
+    <string name="homepage_title">Homepage🏠</string>
+    <string name="calendar_title">Calendar📆</string>
+    <string name="event1"><b>Now That\'s What I Call a Running Club</b>\n\n<b>New Event:</b> \nAdvanced Session Monday 05/05 at 17:15</string>
+    <string name="event2"><b>On The Fence Fencing Club</b>\n\n<b>Cancelled Event:</b> \nThursday 03/05 at 19:00</string>
+    <string name="event3"><b>Partick Thistle Supporters Club</b>\n\n<b>Event Reminder:</b> \nHome Match - Saturday 12/05 15:00</string>
+    <string name="todays_events"><b>Today\'s Events:</b>\n\n You have no events today.</string>
+    <string name="interest_finder_title">Interest Finder🔍</string>
+    <string name="messages_title">Messages📨</string>
+    <string name="my_profile_title">My Profile🧑</string>
+    <string name="my_interests_title">My Interests💖</string>
+</resources>
