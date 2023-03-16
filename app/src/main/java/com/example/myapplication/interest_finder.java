@@ -10,6 +10,9 @@ import android.widget.ImageButton;
 public class interest_finder extends AppCompatActivity {
     private ImageButton calendar;
     private ImageButton homeButton;
+    private ImageButton my_interests;
+    private ImageButton messages;
+    private ImageButton my_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,30 @@ public class interest_finder extends AppCompatActivity {
                 openHomePage();
             }
         });
+
+        my_interests = (ImageButton) findViewById(R.id.my_interests_button);
+        my_interests.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openMyInterests();
+            }
+        });
+
+        messages = (ImageButton) findViewById(R.id.messages_button);
+        messages.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openMessages();
+            }
+        });
+
+        my_profile = (ImageButton) findViewById(R.id.my_account_button);
+        my_profile.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openMyProfile();
+            }
+        });
     }
     public void openCalendar(){
         Intent intent = new Intent(this, calendar.class);
@@ -37,6 +64,21 @@ public class interest_finder extends AppCompatActivity {
     }
     public void openHomePage(){
         Intent intent = new Intent(this, homepage.class);
+        startActivity(intent);
+    }
+
+    public void openMyInterests(){
+        Intent intent = new Intent(this, my_interests.class);
+        startActivity(intent);
+    }
+
+    public void openMessages(){
+        Intent intent = new Intent(this, messages_main.class);
+        startActivity(intent);
+    }
+
+    public void openMyProfile(){
+        Intent intent = new Intent(this, my_profile.class);
         startActivity(intent);
     }
 }
