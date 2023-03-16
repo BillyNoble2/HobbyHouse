@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".messages_main">
 
+    <Button
+        android:id="@+id/message2"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/message2"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message1" />
+
+    <Button
+        android:id="@+id/message1"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/message1"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interest_finder_title" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="205dp"
@@ -93,5 +115,34 @@
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="112dp"
+        android:layout_height="120dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintEnd_toStartOf="@+id/message1"
+        app:layout_constraintTop_toTopOf="@+id/message1"
+        app:srcCompat="@drawable/not_so_happy_man_1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="109dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/message2"
+        app:layout_constraintTop_toTopOf="@+id/message2"
+        app:srcCompat="@drawable/happy_woman_1" />
+
+    <TextView
+        android:id="@+id/message_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/message_hint"
+        app:layout_constraintBottom_toTopOf="@+id/home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
