@@ -7,7 +7,7 @@
     tools:context=".messages_main">
 
     <Button
-        android:id="@+id/message2"
+        android:id="@+id/melissa_chat"
         android:layout_width="240dp"
         android:layout_height="120dp"
         android:layout_marginTop="20dp"
@@ -15,10 +15,10 @@
         android:text="@string/message2"
         android:textAlignment="textStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message1" />
+        app:layout_constraintTop_toBottomOf="@+id/marty_chat" />
 
     <Button
-        android:id="@+id/message1"
+        android:id="@+id/marty_chat"
         android:layout_width="240dp"
         android:layout_height="120dp"
         android:layout_marginTop="50dp"
@@ -122,8 +122,8 @@
         android:layout_height="120dp"
         android:scaleX="0.8"
         android:scaleY="0.8"
-        app:layout_constraintEnd_toStartOf="@+id/message1"
-        app:layout_constraintTop_toTopOf="@+id/message1"
+        app:layout_constraintEnd_toStartOf="@+id/marty_chat"
+        app:layout_constraintTop_toTopOf="@+id/marty_chat"
         app:srcCompat="@drawable/not_so_happy_man_1" />
 
     <ImageView
@@ -131,8 +131,8 @@
         android:layout_width="109dp"
         android:layout_height="103dp"
         android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toStartOf="@+id/message2"
-        app:layout_constraintTop_toTopOf="@+id/message2"
+        app:layout_constraintEnd_toStartOf="@+id/melissa_chat"
+        app:layout_constraintTop_toTopOf="@+id/melissa_chat"
         app:srcCompat="@drawable/happy_woman_1" />
 
     <TextView
