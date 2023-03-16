@@ -18,4 +18,5 @@
     <string name="message1"><b>Marty Johnstone</b>\n\nSounds good, I\'m looking forward to the meetup.</string>
     <string name="message2"><b>Melissa Barnes</b>\n\nSorry, I won\'t be able to make it this week :(</string>
     <string name="message_hint">Hint💡: Click on a message above to expand the conversation</string>
+    <string name="marty_chat_title">Marty Johnstone📨</string>
 </resources>
