@@ -19,4 +19,6 @@
     <string name="message2"><b>Melissa Barnes</b>\n\nSorry, I won\'t be able to make it this week :(</string>
     <string name="message_hint">Hint💡: Click on a message above to expand the conversation</string>
     <string name="marty_chat_title">Marty Johnstone📨</string>
+    <string name="user_profile_title">Brock Oliver</string>
+    <string name="user_profile_info"></string>
 </resources>

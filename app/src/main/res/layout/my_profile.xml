@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:text="@string/my_profile_title"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -69,6 +69,7 @@
         android:src="@drawable/user"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
     <ImageButton
         android:id="@+id/interest_button"
         android:layout_width="wrap_content"
@@ -92,5 +93,138 @@
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="167dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_profile_title"
+        app:srcCompat="@drawable/happy_broccoloi_man_modified" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="436dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#A1FE904D"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+        <TextView
+            android:layout_width="178dp"
+            android:layout_column="1"
+            android:text="Brock Oliver"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TableRow android:layout_width="359dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Interests\t-"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_column="2"
+                android:lineSpacingExtra="4sp"
+                android:padding="10dp"
+                android:text="Running\nFootball\nFencing"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Pronouns\t-"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_column="2"
+                android:padding="10dp"
+                android:text="He / Him"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="199dp"
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Area \t -"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_column="2"
+                android:padding="10dp"
+                android:text="Glasgow South"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_height="99dp">
+
+            <TextView
+                android:layout_width="184dp"
+                android:layout_column="1"
+                android:padding="10dp"
+                android:text="Favourite Club \t -"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="234dp"
+                android:layout_column="2"
+                android:lineSpacingExtra="8dp"
+                android:padding="10dp"
+                android:text="Now That's What I Call a Running Club\n12 visits last month"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="214dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:text="Update Deatails"
+        app:layout_constraintBottom_toTopOf="@+id/home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
