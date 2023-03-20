@@ -94,4 +94,61 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/calendar" />
 
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#DFDFDF"
+        android:queryHint="What are you looking for?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interest_finder_title" />
+
+    <Button
+        android:id="@+id/iFootball"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Paddleboarding\n\n1 Club in your area"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/iSwimming"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Swimming\n\n3 Clubs in your area"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iFootball" />
+
+    <Button
+        android:id="@+id/iPottery"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Pottery\n\n7 events last week"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iSwimming" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Have you tried these?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
