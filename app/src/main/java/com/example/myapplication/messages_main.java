@@ -73,7 +73,7 @@ public class messages_main extends AppCompatActivity {
         melissa_chat.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openMartyChat();
+                openMelissaChat();
             }
         });
     }
