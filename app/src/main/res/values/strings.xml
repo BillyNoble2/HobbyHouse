@@ -19,6 +19,8 @@
     <string name="message2"><b>Melissa Barnes</b>\n\nSorry, I won\'t be able to make it this week :(</string>
     <string name="message_hint">Hint💡: Click on a message above to expand the conversation</string>
     <string name="marty_chat_title">Marty Johnstone📨</string>
+    <string name="user_profile_title">Brock Oliver</string>
+    <string name="user_profile_info"></string>
     <string name="melissa_chat_title">Melissa Barnes📨</string>
     <string name="marty_chat_blurb">You and Marty are both part of the Partick Thistle Supporters Club</string>
     <string name="melissa_chat_blurb">You and Melissa are both part of Now That\'s What I Call a Running Club</string>
