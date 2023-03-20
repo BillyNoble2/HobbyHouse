@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class marty_chat extends AppCompatActivity {
+public class melissa_chat extends AppCompatActivity {
     private ImageButton homeButton;
     private ImageButton calendar;
     private ImageButton my_interests;
@@ -18,7 +18,7 @@ public class marty_chat extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.marty_chat);
+        setContentView(R.layout.melissa_chat);
 
         homeButton = (ImageButton) findViewById(R.id.home_button);
         homeButton.setOnClickListener(new View.OnClickListener(){

@@ -2,12 +2,36 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".messages_main">
 
+    <TextView
+        android:id="@+id/group_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_header2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/group_header1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_header1"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
     <Button
-        android:id="@+id/message2"
+        android:id="@+id/melissa_chat"
         android:layout_width="240dp"
         android:layout_height="120dp"
         android:layout_marginTop="20dp"
@@ -15,13 +39,13 @@
         android:text="@string/message2"
         android:textAlignment="textStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message1" />
+        app:layout_constraintTop_toBottomOf="@+id/marty_chat" />
 
     <Button
-        android:id="@+id/message1"
+        android:id="@+id/marty_chat"
         android:layout_width="240dp"
         android:layout_height="120dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="40dp"
         android:text="@string/message1"
         android:textAlignment="textStart"
@@ -122,8 +146,8 @@
         android:layout_height="120dp"
         android:scaleX="0.8"
         android:scaleY="0.8"
-        app:layout_constraintEnd_toStartOf="@+id/message1"
-        app:layout_constraintTop_toTopOf="@+id/message1"
+        app:layout_constraintEnd_toStartOf="@+id/marty_chat"
+        app:layout_constraintTop_toTopOf="@+id/marty_chat"
         app:srcCompat="@drawable/not_so_happy_man_1" />
 
     <ImageView
@@ -131,8 +155,8 @@
         android:layout_width="109dp"
         android:layout_height="103dp"
         android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toStartOf="@+id/message2"
-        app:layout_constraintTop_toTopOf="@+id/message2"
+        app:layout_constraintEnd_toStartOf="@+id/melissa_chat"
+        app:layout_constraintTop_toTopOf="@+id/melissa_chat"
         app:srcCompat="@drawable/happy_woman_1" />
 
     <TextView
@@ -144,5 +168,24 @@
         app:layout_constraintBottom_toTopOf="@+id/home_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interest_finder_title"
+        app:srcCompat="@drawable/running_square_modified" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/kingsley_modified" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

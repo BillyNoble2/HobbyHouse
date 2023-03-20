@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".marty_chat">
+    tools:context=".melissa_chat">
 
     <TextView
-        android:id="@+id/marty_chat_blurb"
+        android:id="@+id/melissa_chat_blurb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/marty_chat_blurb"
+        android:text="@string/melissa_chat_blurb"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="112dp"
-        android:layout_height="120dp"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
+        android:id="@+id/imageView4"
+        android:layout_width="109dp"
+        android:layout_height="103dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/marty_chat_title"
-        app:srcCompat="@drawable/not_so_happy_man_1" />
+        app:layout_constraintTop_toBottomOf="@+id/melissa_chat_title"
+        app:srcCompat="@drawable/happy_woman_1" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -51,10 +50,10 @@
         app:srcCompat="@drawable/calendar" />
 
     <TextView
-        android:id="@+id/marty_chat_title"
+        android:id="@+id/melissa_chat_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/marty_chat_title"
+        android:text="@string/melissa_chat_title"
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,5 +115,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

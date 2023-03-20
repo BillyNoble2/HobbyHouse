@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class messages_main extends AppCompatActivity {
@@ -13,6 +14,8 @@ public class messages_main extends AppCompatActivity {
     private ImageButton homeButton;
     private ImageButton calendar;
     private ImageButton my_profile;
+    private Button marty_chat;
+    private Button melissa_chat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,21 @@ public class messages_main extends AppCompatActivity {
                 openMyProfile();
             }
         });
+
+        marty_chat = (Button) findViewById(R.id.marty_chat);
+        marty_chat.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openMartyChat();
+            }
+        });
+        melissa_chat = (Button) findViewById(R.id.melissa_chat);
+        melissa_chat.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openMartyChat();
+            }
+        });
     }
     public void openMyInterests(){
         Intent intent = new Intent(this, my_interests.class);
@@ -81,6 +99,16 @@ public class messages_main extends AppCompatActivity {
 
     public void openMyProfile(){
         Intent intent = new Intent(this, my_profile.class);
+        startActivity(intent);
+    }
+
+    public void openMartyChat(){
+        Intent intent = new Intent(this, marty_chat.class);
+        startActivity(intent);
+    }
+
+    public void openMelissaChat(){
+        Intent intent = new Intent(this, melissa_chat.class);
         startActivity(intent);
     }
 }
