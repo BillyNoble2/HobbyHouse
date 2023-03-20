@@ -106,16 +106,19 @@
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:background="#A1FE904D"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:paddingLeft="@dimen/cardview_default_elevation"
+        android:paddingRight="@dimen/cardview_default_elevation"
+        app:layout_constraintBottom_toTopOf="@+id/home_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4">
 
         <TextView
             android:layout_width="178dp"
+            android:layout_height="44dp"
             android:layout_column="1"
             android:text="Brock Oliver"
             android:textAlignment="center"
@@ -123,7 +126,9 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <TableRow android:layout_width="359dp">
+        <TableRow
+            android:layout_width="359dp"
+            android:layout_height="125dp">
 
             <TextView
                 android:layout_width="100dp"
@@ -168,7 +173,6 @@
                 android:textStyle="bold" />
         </TableRow>
 
-
         <TableRow>
 
             <TextView
@@ -191,7 +195,7 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow android:layout_height="99dp">
+        <TableRow android:layout_height="153dp">
 
             <TextView
                 android:layout_width="184dp"
@@ -215,17 +219,6 @@
 
         </TableRow>
     </TableLayout>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="214dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/menu_bar"
-        android:text="Update Deatails"
-        app:layout_constraintBottom_toTopOf="@+id/home_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton"
