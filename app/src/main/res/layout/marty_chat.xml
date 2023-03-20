@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".marty_chat">
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="35dp"
+        android:hint="Type your message here"
+        app:layout_constraintBottom_toTopOf="@+id/home_button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/menu_bar"
+        app:layout_constraintStart_toEndOf="@+id/textInputEditText"
+        app:layout_constraintTop_toTopOf="@+id/textInputEditText"
+        app:srcCompat="@drawable/send" />
+
     <TextView
         android:id="@+id/marty_chat_blurb"
         android:layout_width="wrap_content"
