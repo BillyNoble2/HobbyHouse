@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_selection">
+
+    <Button
+        android:id="@+id/register_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/menu_bar"
+        android:text="Register for an account"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/club_member_button"
+        app:layout_constraintStart_toStartOf="@+id/club_member_button"
+        app:layout_constraintTop_toBottomOf="@+id/register_prompt" />
+
+    <TextView
+        android:id="@+id/register_prompt"
+        android:layout_width="382dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="80dp"
+        android:clickable="false"
+        android:text="@string/register_prompt"
+        android:textAlignment="center"
+        android:textColor="@color/menu_bar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_owner_button" />
+
+    <Button
+        android:id="@+id/club_owner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/menu_bar"
+        android:text="Club Owner"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/club_member_button"
+        app:layout_constraintStart_toStartOf="@+id/club_member_button"
+        app:layout_constraintTop_toBottomOf="@+id/club_member_button" />
+
+    <TextView
+        android:id="@+id/account_type_title"
+        android:layout_width="386dp"
+        android:layout_height="57dp"
+        android:clickable="false"
+        android:text="@string/account_type_title"
+        android:textAlignment="center"
+        android:textColor="@color/menu_bar"
+        android:textSize="15pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/club_member_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/menu_bar"
+        android:text="Club Member"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_type_title" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="394dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hobby_house_4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

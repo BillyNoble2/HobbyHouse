@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".login_user">
 
     <Button
         android:id="@+id/button"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView6"
         android:layout_width="387dp"
         android:layout_height="94dp"
         android:clickable="false"
@@ -32,9 +32,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="394dp"
-        android:layout_height="204dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="389dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="20dp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -45,17 +47,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="-350dp"
+        android:layout_marginTop="50dp"
         android:clickable="false"
         android:text="@string/username"
         android:textAlignment="center"
         android:textColor="@color/menu_bar"
         android:textSize="10pt"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
