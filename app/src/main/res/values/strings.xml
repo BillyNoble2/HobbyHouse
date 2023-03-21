@@ -27,5 +27,7 @@
     <string name="group_header1">Now That\'s What \nI Call a Running Club</string>
     <string name="group_header2">Partick Thistle \nSupporters Club</string>
     <string name="melissa_message_1">Hey, are you coming along tonight?</string>
+    <string name="account_type_title">I am a...</string>
+    <string name="register_prompt">Don\'t have an account?</string>
 
 </resources>
