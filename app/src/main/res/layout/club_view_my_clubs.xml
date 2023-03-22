@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".club_view_my_clubs">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@drawable/trail_running_modified" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_interests_title2"
+        app:srcCompat="@drawable/_aside" />
+
+    <TextView
+        android:id="@+id/my_interests_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Clubs ♣️"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <ImageButton
+        android:id="@+id/calendar_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/menu_bar"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="205dp"
+        android:layout_height="84dp"
+        android:src="@drawable/hobby_house_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/my_account_button3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/menu_bar"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@+id/messages_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/messages_button3" />
+
+    <ImageButton
+        android:id="@+id/messages_button3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/menu_bar"
+        android:src="@drawable/messenger"
+        app:layout_constraintEnd_toStartOf="@+id/my_account_button3"
+        app:layout_constraintStart_toEndOf="@+id/home_button2"
+        app:layout_constraintTop_toTopOf="@+id/home_button2" />
+
+    <ImageButton
+        android:id="@+id/interest_button3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/menu_bar"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@+id/my_interests_button3"
+        app:layout_constraintEnd_toStartOf="@+id/home_button2"
+        app:layout_constraintStart_toEndOf="@+id/my_interests_button3"
+        app:layout_constraintTop_toTopOf="@+id/my_interests_button3" />
+
+    <ImageButton
+        android:id="@+id/my_interests_button3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/menu_bar"
+        android:src="@drawable/heart_with_circles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/home_button2" />
+
+    <ImageButton
+        android:id="@+id/home_button2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/menu_bar"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:text="Slightly Athletico fc\nEst 2019\n\n24 members"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/old_school_modified"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:text="Shawlands Juniors FC\nEST 2023\n\n30 members"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:text="West Coast Trail Runners\nEST 2021\n\n64 members"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
