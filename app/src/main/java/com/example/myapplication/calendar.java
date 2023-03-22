@@ -13,6 +13,7 @@ public class calendar extends AppCompatActivity {
     private ImageButton interest_finder;
     private ImageButton messages;
     private ImageButton my_profile;
+    private ImageButton back_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,65 +21,75 @@ public class calendar extends AppCompatActivity {
         setContentView(R.layout.calendar);
 
         homeButton = (ImageButton) findViewById(R.id.home_button);
-        homeButton.setOnClickListener(new View.OnClickListener(){
+        homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 openHomePage();
             }
         });
 
         my_interests = (ImageButton) findViewById(R.id.my_interests_button);
-        my_interests.setOnClickListener(new View.OnClickListener(){
+        my_interests.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 openMyInterests();
             }
         });
 
         interest_finder = (ImageButton) findViewById(R.id.interest_button);
-        interest_finder.setOnClickListener(new View.OnClickListener(){
+        interest_finder.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 openInterestFinder();
             }
         });
 
         messages = (ImageButton) findViewById(R.id.messages_button);
-        messages.setOnClickListener(new View.OnClickListener(){
+        messages.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 openMessages();
             }
         });
 
         my_profile = (ImageButton) findViewById(R.id.my_account_button);
-        my_profile.setOnClickListener(new View.OnClickListener(){
+        my_profile.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 openMyProfile();
             }
         });
+
+        back_button = (ImageButton) findViewById(R.id.back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHomePage();
+            }
+        });
     }
-    public void openHomePage(){
+
+    public void openHomePage() {
         Intent intent = new Intent(this, homepage.class);
         startActivity(intent);
     }
-    public void openMyInterests(){
+
+    public void openMyInterests() {
         Intent intent = new Intent(this, my_interests.class);
         startActivity(intent);
     }
 
-    public void openInterestFinder(){
+    public void openInterestFinder() {
         Intent intent = new Intent(this, interest_finder.class);
         startActivity(intent);
     }
 
-    public void openMessages(){
+    public void openMessages() {
         Intent intent = new Intent(this, messages_main.class);
         startActivity(intent);
     }
 
-    public void openMyProfile(){
+    public void openMyProfile() {
         Intent intent = new Intent(this, my_profile.class);
         startActivity(intent);
     }

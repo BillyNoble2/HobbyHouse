@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".my_profile">
+    tools:context=".partick_page">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/menu_bar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -15,16 +26,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/my_profile_title"
+    <ImageButton
+        android:id="@+id/calendar_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/my_profile_title"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/menu_bar"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/partick_page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/partick_page_title"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="112dp"
+        android:layout_height="120dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partick_page_title"
+        app:srcCompat="@drawable/kingsley_modified" />
 
     <ImageButton
         android:id="@+id/my_interests_button"
@@ -40,8 +76,7 @@
     <ImageButton
         android:id="@+id/home_button"
         android:layout_width="80dp"
-        android:layout_height="80dp
-"
+        android:layout_height="80dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/menu_bar"
         android:src="@drawable/home"
@@ -82,45 +117,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/home_button" />
 
-    <ImageButton
-        android:id="@+id/calendar_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:backgroundTint="@color/menu_bar"
-        android:scaleX="1.2"
-        android:scaleY="1.2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/calendar" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="167dp"
-        android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_profile_title"
-        app:srcCompat="@drawable/happy_broccoloi_man_modified" />
-
     <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="410dp"
-        android:layout_height="371dp"
+        android:layout_width="409dp"
+        android:layout_height="334dp"
         android:layout_marginTop="8dp"
-        android:background="#A1FE904D"
-        android:paddingLeft="@dimen/cardview_default_elevation"
-        android:paddingRight="@dimen/cardview_default_elevation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+        android:background="@color/highlight_colour"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <TextView
             android:layout_width="178dp"
             android:layout_height="44dp"
             android:layout_column="1"
-            android:text="Brock Oliver"
+            android:text="You are a member of this club."
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -134,21 +142,21 @@
                 android:layout_width="100dp"
                 android:layout_column="1"
                 android:padding="10dp"
-                android:text="Interests\t-"
+                android:text="Category - "
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_column="2"
                 android:lineSpacingExtra="4sp"
                 android:padding="10dp"
-                android:text="Running\nFootball\nFencing"
+                android:text="Football"
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
@@ -157,20 +165,20 @@
                 android:layout_width="100dp"
                 android:layout_column="1"
                 android:padding="10dp"
-                android:text="Pronouns\t-"
+                android:text="Price - "
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_column="2"
                 android:padding="10dp"
-                android:text="He / Him"
+                android:text="£25 per match"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
@@ -180,20 +188,20 @@
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:padding="10dp"
-                android:text="Area \t -"
+                android:text="Members - "
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_column="2"
                 android:padding="10dp"
-                android:text="Glasgow South"
+                android:text="26"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow android:layout_height="153dp">
@@ -202,38 +210,24 @@
                 android:layout_width="184dp"
                 android:layout_column="1"
                 android:padding="10dp"
-                android:text="Favourite Club \t -"
+                android:text="Notes - "
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="200dp"
                 android:layout_column="2"
                 android:lineSpacingExtra="8dp"
                 android:padding="10dp"
-                android:text="Now That's What I Call a Running Club\n12 visits last month"
+                android:text="Please confirm attendance for matches 2 days in advance"
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="15dp" />
 
         </TableRow>
     </TableLayout>
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="15dp"
-        android:backgroundTint="@color/menu_bar"
-        android:scaleX="1.2"
-        android:scaleY="1.2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

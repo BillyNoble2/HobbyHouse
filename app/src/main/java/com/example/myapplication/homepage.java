@@ -16,6 +16,7 @@ public class homepage extends AppCompatActivity {
     private ImageButton my_profile;
 
     private ImageButton my_interests;
+    private Button partick_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,13 @@ public class homepage extends AppCompatActivity {
                 openMyInterests();
             }
         });
+        partick_button = (Button) findViewById(R.id.partick_button);
+        partick_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openPartickPage();
+            }
+        });
     }
     public void openCalendar(){
         Intent intent = new Intent(this, calendar.class);
@@ -83,6 +91,10 @@ public class homepage extends AppCompatActivity {
 
     public void openMyInterests(){
         Intent intent = new Intent(this, my_interests.class);
+        startActivity(intent);
+    }
+    public void openPartickPage(){
+        Intent intent = new Intent(this, partick_page.class);
         startActivity(intent);
     }
 }

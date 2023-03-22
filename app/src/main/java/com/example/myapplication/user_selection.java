@@ -22,7 +22,7 @@ public class user_selection extends AppCompatActivity {
         userButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openOwnerLogin();
+                openMemberLogin();
             }
         });
 
@@ -36,6 +36,11 @@ public class user_selection extends AppCompatActivity {
     }
     public void openOwnerLogin(){
         Intent intent = new Intent(this, login_owner.class);
+        startActivity(intent);
+    }
+
+    public void openMemberLogin(){
+        Intent intent = new Intent(this, login_user.class);
         startActivity(intent);
     }
 }

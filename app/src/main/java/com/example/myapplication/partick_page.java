@@ -7,27 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class melissa_chat extends AppCompatActivity {
-    private ImageButton homeButton;
+public class partick_page extends AppCompatActivity {
     private ImageButton calendar;
-    private ImageButton my_interests;
     private ImageButton interest_finder;
-    private ImageButton my_profile;
     private ImageButton messages;
+
+    private ImageButton my_profile;
+
+    private ImageButton my_interests;
+    private ImageButton homeButton;
     private ImageButton back_button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.melissa_chat);
-
-        homeButton = (ImageButton) findViewById(R.id.home_button);
-        homeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                openHomePage();
-            }
-        });
+        setContentView(R.layout.partick_page);
 
         calendar = (ImageButton) findViewById(R.id.calendar_button);
         calendar.setOnClickListener(new View.OnClickListener(){
@@ -36,28 +31,11 @@ public class melissa_chat extends AppCompatActivity {
                 openCalendar();
             }
         });
-
-        my_interests = (ImageButton) findViewById(R.id.my_interests_button);
-        my_interests.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                openMyInterests();
-            }
-        });
-
         interest_finder = (ImageButton) findViewById(R.id.interest_button);
         interest_finder.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 openInterestFinder();
-            }
-        });
-
-        my_profile = (ImageButton) findViewById(R.id.my_account_button);
-        my_profile.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                openMyProfile();
             }
         });
 
@@ -69,23 +47,43 @@ public class melissa_chat extends AppCompatActivity {
             }
         });
 
-        back_button = (ImageButton) findViewById(R.id.back_button);
-        back_button.setOnClickListener(new View.OnClickListener() {
+        my_profile = (ImageButton) findViewById(R.id.my_account_button);
+        my_profile.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openMyProfile();
+            }
+        });
+
+        my_interests = (ImageButton) findViewById(R.id.my_interests_button);
+        my_interests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                openMyInterests();
+            }
+        });
+        homeButton = (ImageButton) findViewById(R.id.home_button);
+        homeButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
                 openHomePage();
             }
         });
 
-
+        back_button = (ImageButton) findViewById(R.id.back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMessages();
+            }
+        });
+    }
+    public void openCalendar(){
+        Intent intent = new Intent(this, calendar.class);
+        startActivity(intent);
     }
     public void openHomePage(){
         Intent intent = new Intent(this, homepage.class);
-        startActivity(intent);
-    }
-
-    public void openCalendar(){
-        Intent intent = new Intent(this, calendar.class);
         startActivity(intent);
     }
 
@@ -94,8 +92,8 @@ public class melissa_chat extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openInterestFinder(){
-        Intent intent = new Intent(this, interest_finder.class);
+    public void openMessages(){
+        Intent intent = new Intent(this, messages_main.class);
         startActivity(intent);
     }
 
@@ -104,8 +102,8 @@ public class melissa_chat extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openMessages(){
-        Intent intent = new Intent(this, messages_main.class);
+    public void openInterestFinder(){
+        Intent intent = new Intent(this, interest_finder.class);
         startActivity(intent);
     }
 }

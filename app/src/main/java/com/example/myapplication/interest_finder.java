@@ -13,6 +13,8 @@ public class interest_finder extends AppCompatActivity {
     private ImageButton my_interests;
     private ImageButton messages;
     private ImageButton my_profile;
+    private ImageButton interest_finder;
+    private ImageButton back_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,21 @@ public class interest_finder extends AppCompatActivity {
                 openMyProfile();
             }
         });
+
+        interest_finder = (ImageButton) findViewById(R.id.interest_button);
+        interest_finder.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openInterestFinder();
+            }
+        });
+        back_button = (ImageButton) findViewById(R.id.back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHomePage();
+            }
+        });
     }
     public void openCalendar(){
         Intent intent = new Intent(this, calendar.class);
@@ -79,6 +96,11 @@ public class interest_finder extends AppCompatActivity {
 
     public void openMyProfile(){
         Intent intent = new Intent(this, my_profile.class);
+        startActivity(intent);
+    }
+
+    public void openInterestFinder(){
+        Intent intent = new Intent(this, interest_finder.class);
         startActivity(intent);
     }
 }
