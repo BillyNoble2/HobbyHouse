@@ -16,6 +16,8 @@ public class partick_page extends AppCompatActivity {
 
     private ImageButton my_interests;
     private ImageButton homeButton;
+    private ImageButton back_button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +67,14 @@ public class partick_page extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 openHomePage();
+            }
+        });
+
+        back_button = (ImageButton) findViewById(R.id.back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMessages();
             }
         });
     }

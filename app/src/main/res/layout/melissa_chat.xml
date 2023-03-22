@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".melissa_chat">
 
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/menu_bar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
     <Button
         android:id="@+id/melissa_message_1"
         android:layout_width="239dp"
@@ -94,36 +105,36 @@
 
     <ImageButton
         android:id="@+id/home_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/menu_bar"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/messages_button" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/messages_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/menu_bar"
         android:src="@drawable/messenger"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/my_account_button" />
+        app:layout_constraintStart_toEndOf="@+id/home_button" />
 
     <ImageButton
         android:id="@+id/my_account_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/menu_bar"
         android:src="@drawable/user"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/messages_button" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"

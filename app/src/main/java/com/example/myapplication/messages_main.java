@@ -16,6 +16,7 @@ public class messages_main extends AppCompatActivity {
     private ImageButton my_profile;
     private Button marty_chat;
     private Button melissa_chat;
+    private ImageButton back_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +75,14 @@ public class messages_main extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 openMelissaChat();
+            }
+        });
+
+        back_button = (ImageButton) findViewById(R.id.back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHomePage();
             }
         });
     }

@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".partick_page">
 
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/menu_bar"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="205dp"
@@ -64,36 +75,36 @@
 
     <ImageButton
         android:id="@+id/home_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/menu_bar"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/messages_button" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/messages_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/menu_bar"
         android:src="@drawable/messenger"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/my_account_button" />
+        app:layout_constraintStart_toEndOf="@+id/home_button" />
 
     <ImageButton
         android:id="@+id/my_account_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="@color/menu_bar"
         android:src="@drawable/user"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/messages_button" />
 
     <ImageButton
         android:id="@+id/interest_button"
@@ -107,10 +118,10 @@
         app:layout_constraintEnd_toStartOf="@+id/home_button" />
 
     <TableLayout
-        android:layout_width="412dp"
-        android:layout_height="369dp"
+        android:layout_width="409dp"
+        android:layout_height="334dp"
+        android:layout_marginTop="8dp"
         android:background="@color/highlight_colour"
-        app:layout_constraintBottom_toTopOf="@+id/home_button"
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <TextView
@@ -135,7 +146,7 @@
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -158,7 +169,7 @@
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -167,7 +178,7 @@
                 android:text="£25 per match"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow>
@@ -181,7 +192,7 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -190,7 +201,7 @@
                 android:text="26"
                 android:textAlignment="viewStart"
                 android:textColor="@color/white"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
         </TableRow>
 
         <TableRow android:layout_height="153dp">
@@ -203,7 +214,7 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="200dp"
@@ -213,8 +224,7 @@
                 android:text="Please confirm attendance for matches 2 days in advance"
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
-                android:textSize="15dp"
- />
+                android:textSize="15dp" />
 
         </TableRow>
     </TableLayout>
