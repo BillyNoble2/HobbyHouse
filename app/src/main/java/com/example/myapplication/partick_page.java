@@ -7,18 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class interest_finder extends AppCompatActivity {
+public class partick_page extends AppCompatActivity {
     private ImageButton calendar;
-    private ImageButton homeButton;
-    private ImageButton my_interests;
-    private ImageButton messages;
-    private ImageButton my_profile;
     private ImageButton interest_finder;
+    private ImageButton messages;
+
+    private ImageButton my_profile;
+
+    private ImageButton my_interests;
+    private ImageButton homeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.interest_finder);
+        setContentView(R.layout.partick_page);
 
         calendar = (ImageButton) findViewById(R.id.calendar_button);
         calendar.setOnClickListener(new View.OnClickListener(){
@@ -27,19 +29,11 @@ public class interest_finder extends AppCompatActivity {
                 openCalendar();
             }
         });
-        homeButton = (ImageButton) findViewById(R.id.home_button);
-        homeButton.setOnClickListener(new View.OnClickListener(){
+        interest_finder = (ImageButton) findViewById(R.id.interest_button);
+        interest_finder.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openHomePage();
-            }
-        });
-
-        my_interests = (ImageButton) findViewById(R.id.my_interests_button);
-        my_interests.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                openMyInterests();
+                openInterestFinder();
             }
         });
 
@@ -59,11 +53,18 @@ public class interest_finder extends AppCompatActivity {
             }
         });
 
-        interest_finder = (ImageButton) findViewById(R.id.interest_button);
-        interest_finder.setOnClickListener(new View.OnClickListener(){
+        my_interests = (ImageButton) findViewById(R.id.my_interests_button);
+        my_interests.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMyInterests();
+            }
+        });
+        homeButton = (ImageButton) findViewById(R.id.home_button);
+        homeButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openInterestFinder();
+                openHomePage();
             }
         });
     }
