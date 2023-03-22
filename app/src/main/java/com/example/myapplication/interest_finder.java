@@ -14,6 +14,7 @@ public class interest_finder extends AppCompatActivity {
     private ImageButton messages;
     private ImageButton my_profile;
     private ImageButton interest_finder;
+    private ImageButton back_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +65,13 @@ public class interest_finder extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 openInterestFinder();
+            }
+        });
+        back_button = (ImageButton) findViewById(R.id.back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openHomePage();
             }
         });
     }
