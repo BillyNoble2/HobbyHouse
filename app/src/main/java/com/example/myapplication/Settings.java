@@ -5,24 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-public class homepage extends AppCompatActivity {
+public class Settings extends AppCompatActivity {
     private ImageButton calendar;
     private ImageButton interest_finder;
     private ImageButton messages;
-
     private ImageButton my_profile;
-
     private ImageButton my_interests;
-    private Button partick_button;
-    private ImageButton settings_button;
+    private ImageButton homeButton;
+    private ImageButton back_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.homepage);
+        setContentView(R.layout.settings);
 
         calendar = (ImageButton) findViewById(R.id.calendar_button);
         calendar.setOnClickListener(new View.OnClickListener(){
@@ -62,18 +59,18 @@ public class homepage extends AppCompatActivity {
                 openMyInterests();
             }
         });
-        partick_button = (Button) findViewById(R.id.partick_button);
-        partick_button.setOnClickListener(new View.OnClickListener(){
+        homeButton = (ImageButton) findViewById(R.id.home_button);
+        homeButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openPartickPage();
+                openHomePage();
             }
         });
-        settings_button = (ImageButton) findViewById(R.id.settings_button);
-        settings_button.setOnClickListener(new View.OnClickListener(){
+        back_button = (ImageButton) findViewById(R.id.back_button);
+        back_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                openSettings();
+            public void onClick(View v) {
+                openHomePage();
             }
         });
     }
@@ -101,13 +98,8 @@ public class homepage extends AppCompatActivity {
         Intent intent = new Intent(this, my_interests.class);
         startActivity(intent);
     }
-    public void openPartickPage(){
-        Intent intent = new Intent(this, partick_page.class);
-        startActivity(intent);
-    }
-
-    public void openSettings(){
-        Intent intent = new Intent(this, Settings.class);
+    public void openHomePage(){
+        Intent intent = new Intent(this, homepage.class);
         startActivity(intent);
     }
 }

@@ -12,7 +12,11 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+
             android:name=".ViewClubMembers"
+
+            android:name=".Settings"
+
             android:exported="false" />
         <activity
             android:name=".owner_new_event"
