@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Settings extends AppCompatActivity {
@@ -15,6 +16,8 @@ public class Settings extends AppCompatActivity {
     private ImageButton my_interests;
     private ImageButton homeButton;
     private ImageButton back_button;
+    private Button logout_button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +76,14 @@ public class Settings extends AppCompatActivity {
                 openHomePage();
             }
         });
+
+        logout_button = (Button) findViewById(R.id.logout_button);
+        logout_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLogin();
+            }
+        });
     }
     public void openCalendar(){
         Intent intent = new Intent(this, calendar.class);
@@ -100,6 +111,11 @@ public class Settings extends AppCompatActivity {
     }
     public void openHomePage(){
         Intent intent = new Intent(this, homepage.class);
+        startActivity(intent);
+    }
+
+    public void openLogin(){
+        Intent intent = new Intent(this, login_user.class);
         startActivity(intent);
     }
 }
